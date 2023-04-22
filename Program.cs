@@ -58,38 +58,37 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-void GetResult(double[] arr, double count)
-{
-    Console.WriteLine($"{"["}{String.Join(", ", arr)}{"]"} -> {count}");
-}
+// void GetResult(double[] arr, double count)
+// {
+//     Console.WriteLine($"{"["}{String.Join(", ", arr)}{"]"} -> {count}");
+// }
 
-int GetRandNum(int a, int b)
-{
-    int num = new Random().Next(a, b);
-    return num;
-}
+// int GetRandNum(int a, int b)
+// {
+//     int num = new Random().Next(a, b);
+//     return num;
+// }
 
-double GetDif(double a, double b)
-{
-    return a - b;
-}
+// double GetDif(double a, double b)
+// {
+//     return a - b;
+// }
 
-double [] arrNum = new double [GetRandNum(5, 10)];
+// double [] arrNum = new double [GetRandNum(5, 10)];
+// double maxNum = 0,
+//        minNum = 1000;
 
-double maxNum = 0,
-       minNum = 1000;
+// for (int i = 0; i < arrNum.Length; i++)
+// {
+//     arrNum[i] = Convert.ToDouble(GetRandNum(1, 1000));
+//     if (arrNum[i] > maxNum)
+//     {
+//         maxNum = arrNum[i];
+//     }
+//     if (arrNum[i] < minNum)
+//     {
+//         minNum = arrNum[i];
+//     }
+// }
 
-for (int i = 0; i < arrNum.Length; i++)
-{
-    arrNum[i] = Convert.ToDouble(GetRandNum(1, 1000));
-    if (arrNum[i] > maxNum)
-    {
-        maxNum = arrNum[i];
-    }
-    if (arrNum[i] < minNum)
-    {
-        minNum = arrNum[i];
-    }
-}
-
-GetResult(arrNum, GetDif(maxNum, minNum));
+// GetResult(arrNum, GetDif(maxNum, minNum));
